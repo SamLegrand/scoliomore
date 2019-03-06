@@ -1,0 +1,10 @@
+.drop-link {
+    color: inherit;
+    text-decoration: inherit;
+    display: block;
+}
+
+.drop-link:hover {
+    color: inherit;
+    text-decoration: inherit;
+}

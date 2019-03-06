@@ -2,7 +2,7 @@
 <html lang="nl">
 
 <head>
-    <title>scoliomore</title>
+    <title>ScolioMore</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,27 +22,37 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!--<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" -->
-    <!--{% block stylesheets %}{% endblock %}-->
+    {% block stylesheets %}{% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='myscript.js') }}"></script>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="#">scoliomore</a>
+            <a class="navbar-brand" href="/">ScolioMore</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 {% block navbar_nav %}{% endblock %}
                 <ul class="navbar-nav ml-auto">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log in</button>
-                    <!--<li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Firstname Lastname</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="#">Account</a>
-                        <button class="dropdown-item" type="submit">Log out</button>
-                    </div>
-                </li>-->
+                    {% if session['username'] %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ session['username'] }}</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Account</a>
+                            <button class="dropdown-item" type="submit"><a class="drop-link" href="/logout">Afmelden</a></button>
+                        </div>
+                    </li>
+                    {% else %}
+                    <li class="nav-item mr-2">
+                        <a class="btn btn-outline-light my-2 my-sm-0" href="/login">Inloggen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-success my-2 my-sm-0" href="/register">Registreren</a>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
