@@ -8,3 +8,39 @@
     color: inherit;
     text-decoration: inherit;
 }
+
+.day {
+    height: 800px;
+    border-right: 1px solid grey;
+}
+
+.day:first-child {
+    border-left: 1px solid grey;
+}
+
+h5 {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.circle-text {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

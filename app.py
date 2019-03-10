@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import render_template
 from flask import session, request, json, redirect
+from datetime import datetime
 
 app = Flask(__name__)
 app.secret_key = "abcdefgsecretkey123420"
@@ -47,10 +48,15 @@ def render_register():
 
 @app.route('/calendar')
 def render_calendar():
+    day = datetime.today().weekday()
     if 'username' in session:
-        return render_template('calendar.html', session=session)
+        return render_template('calendar.html', session=session, day=day)
     else:
         return redirect('/')
+
+@app.route('/video/<int:video_id>')
+def render_video(video_id):
+    return render_template('show_video.html', session=session, video_id=video_id)
 
 
 
