@@ -56,8 +56,46 @@ def render_calendar():
 
 @app.route('/video/<int:video_id>')
 def render_video(video_id):
-    return render_template('show_video.html', session=session, video_id=video_id)
-
+    info = dict()
+    if video_id is 1:
+        info['video_name'] = 'Jarne%202.mp4'
+        info['title'] = 'Sex on the beach'
+        info['uh'] = 'Patiënt in ruglig, met de bovenrug gesteund op de zitbal , de voeten op de grond. Knieën, heupen en schouders op één lijn.'
+        info['uv'] = 'Afwisselend linker- en rechtervoet heffen.'
+        info['uvlo'] = 'de bekkengordel dient tijdens heel de oefening horizontaal te blijven!'
+        info['set'] = '4 x 6 keer wisselen van voet.'
+    elif video_id is 2:
+        info['video_name'] = 'Stijn%201.mp4'
+        info['title'] = 'Superman'
+        info['uh'] = 'Patiënt in handen- en knieënstand.'
+        info['uv'] = 'Patiënt steekt één been naar achter, tegelijkertijd steekt hij/zij de hetero-laterale (aan de andere kant) arm naar voor (+ afwisselen).'
+        info['uvlo'] = 'zowel de schouder- als de bekkengordel dienen tijdens heel de oefening horizontaal te blijven!'
+        info['set'] = '2 x 16 keer afwisselen.'
+    elif video_id is 3:
+        info['video_name'] = 'Thibaut%201.mp4'
+        info['uh'] = 'Patiënt gesteund op ellebogen en voeten (schouders, heupen, knieën en enkels op één lijn)'
+        info['uv'] = 'Afwisselend linker- en rechtervoet heffen (extensie/gestrekt houden van de heup).'
+        info['uvlo'] = 'bekkengordel dient tijdens de oefening horizontaal te blijven!'
+        info['set'] = '2 x 10 keer afwisselen.'
+    elif video_id is 4:
+        info['video_name'] = 'Thibaut%202.mp4'
+        info['uh'] = 'Patiënt gesteund op ellebogen (op de grond) en onderbenen (op de zitbal).'
+        info['uhlo'] = 'schouders, heupen, knieën en enkels bevinden zich op één lijn.'
+        info['uv'] = 'Afwisselend linker- en rechtervoet heffen (extensie/gestrekt houden van de heup).'
+        info['uvlo'] = 'zowel de schouder- als de bekkengordel dienen tijdens heel de oefening horizontaal te blijven!'
+        info['set'] = '3 x 6 keer afwisselen.'
+    elif video_id is 5:
+        info['video_name'] = 'Tuur%201.mp4'
+        info['uh'] = 'Patiënt in handen- en knieënstand.'
+        info['uv'] = 'Patiënt maakt afwisselend een holle en een bolle rug (geleidelijk). '
+        info['set'] = ': 2 x 15 keer.'
+        info['title'] = 'Kattenrug'
+    elif video_id is 6:
+        info['video_name'] = 'Tuur%202.mp4'
+        info['uh'] = 'Patiënt in gestrekte kniezit op de zitbal (= onderbenen gesteund op de zitbal, heupen in extensie/gestrekt).'
+        info['uv'] = 'Patiënt brengt met beide handen een gewichtje van beneden naar boven (en terug).'
+        info['set'] = '2 x 8 keer.'
+    return render_template('show_video.html', session=session, info=info)
 
 
 if __name__ == '__main__':
