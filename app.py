@@ -46,6 +46,10 @@ def render_register():
         return redirect('/')
     return render_template('register.html', session=session)
 
+@app.route('/faq')
+def render_faq():
+    return render_template('faq.html', session=session)
+
 @app.route('/calendar')
 def render_calendar():
     day = datetime.today().weekday()
