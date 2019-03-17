@@ -30,31 +30,17 @@ $(document).ready(function(){
             }
         });
     });
-
-    $('#ContactForm').submit(function(e) {
-        e.preventDefault();
-        // Sanitizes email to not contain domain
-        let email = $('input[name="email"]').val().split("@")[0] + $( "#ContactForm_Email option:selected" ).text();
-        $.ajax({
-            url: '/api/contact',
-            data: {
-                "email": email,
-                "message": $('textarea[name="message"]').val()
-            },
-            type: 'POST',
-            dataType: 'json',
-            success: function(response) {
-                if (response.Status === "Success") {
-                    window.alert("Concact send!");
-                    window.location.href = '/contact';
-                }
-                else {
-                    console.log(response);
-                }
-            },
-            error: function(error) {
-                console.log(error);
+    
+    $('.faq-item').click(function(e) {
+        let target = $($(this).data('target'));
+        if (target.hasClass('collapse')) {
+            if (!target.hasClass('show')) {
+                $(this).find("i").removeClass('fa-plus-circle').addClass('fa-minus-circle');
+        }
+            else {
+                $(this).find("i").removeClass('fa-minus-circle').addClass('fa-plus-circle');
             }
-        });
+        }
     });
+    
 });

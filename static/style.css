@@ -87,3 +87,7 @@ video {
 .centered-list {
   display: inline-block;
 }
+
+.card button:hover, .card button:active, .card button:focus {
+    text-decoration: none;
+}
