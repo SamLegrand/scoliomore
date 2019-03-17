@@ -1,11 +1,17 @@
 {% extends "base.html" %}
 {% block navbar_nav %}
 <ul class="navbar-nav">
+    {% if session['username'] %}
+    <li class="nav-item">
+        <a class="nav-link" href="/calendar">Agenda</a>
+    </li>
+    {% else %}
     <li class="nav-item">
         <a class="nav-link" href="/">Home</a>
     </li>
+    {% endif %}
     <li class="nav-item">
-        <a class="nav-link active" href="#">FAQ</a>
+        <a class="nav-link" href="/faq">FAQ</a>
     </li>
 </ul>
 {% endblock %}

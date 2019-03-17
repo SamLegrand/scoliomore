@@ -38,17 +38,16 @@
                 {% block navbar_nav %}{% endblock %}
                 <ul class="navbar-nav ml-auto">
                     {% if session['username'] %}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ session['username'] }}</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/calendar">Agenda</a>
-                            <button class="dropdown-item" type="submit"><a class="drop-link" href="/logout">Afmelden</a></button>
-                        </div>
+                    <li class="nav-item">
+                        <a class="nav-link disabled text-light" href="#">{{ session['username'] }}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" href="/logout">Afmelden</a>
                     </li>
                     {% else %}
                     <!--<li class="nav-item mr-2">
-                        <a class="btn btn-outline-light my-2 my-sm-0" href="/login">Inloggen</a>
-                    </li>-->
+                            <a class="btn btn-outline-light my-2 my-sm-0" href="/login">Inloggen</a>
+                        </li>-->
                     <li class="nav-item">
                         <a class="btn btn-outline-success my-2 my-sm-0" href="/register">Registreren</a>
                     </li>
