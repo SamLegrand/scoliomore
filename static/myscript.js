@@ -43,4 +43,12 @@ $(document).ready(function(){
         }
     });
     
+    $('.corset').click(function(e) {
+        let checkbox = $(this).find("i");
+        if (checkbox.hasClass('fa-square')) {
+                checkbox.removeClass('fa-square').addClass('fa-check-square');
+                $(this).removeClass('outline-orange').addClass('success');
+        }
+    });
+    
 });

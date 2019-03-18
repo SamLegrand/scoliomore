@@ -91,3 +91,31 @@ video {
 .card button:hover, .card button:active, .card button:focus {
     text-decoration: none;
 }
+
+.blue {
+    color: #17a1b0;
+}
+
+.orange {
+    color: #f14d3e;
+}
+
+.bg-blue {
+    background-color: #17a1b0;
+}
+
+.outline-orange {
+    color: #f14d3e;
+    border-color: #f14d3e;
+}
+
+.outline-orange:hover {
+    color: white;
+    background-color: #f14d3e;
+}
+
+.success, .success:hover {
+    color: white;
+    background-color: #17a1b0;
+    border-color: #17a1b0;
+}
