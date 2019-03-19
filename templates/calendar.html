@@ -16,7 +16,7 @@
 </ul>
 {% endblock %}
 {% block main %}
-<div class="container">
+<div class="container-fluid">
     <div class="row">
        <div class="col">
            <h2 class="text-center mb-4 mt-2">Agenda</h2>
@@ -24,76 +24,290 @@
     </div>
     <div class="row calendar unselectable">
         <div class="col-sm day">
+            <p class="text-center invisible m-0">UUR</p>
+            <h5></h5>
+            <hr class="divider invisible">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <h6 class="time">8:00</h6>
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <h6 class="time">9:00</h6>
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <h6 class="time">10:00</h6>
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <h6 class="time">11:00</h6>
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <h6 class="time">12:00</h6>
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <h6 class="time">13:00</h6>
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <h6 class="time">14:00</h6>
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <h6 class="time">15:00</h6>
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <h6 class="time">16:00</h6>
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <h6 class="time">17:00</h6>
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <h6 class="time">18:00</h6>
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <h6 class="time">19:00</h6>
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <h6 class="time">20:00</h6>
+        </div>
+        <div class="col-sm day">
             {% if day == 0 %}
-            <p class="text-center blue font-weight-bold">MA</p>
+            <p class="text-center blue font-weight-bold m-0">MA</p>
             <h5 class="bg-blue text-white circle-text">18</h5>
             {% else %}
-            <p class="text-center">MA</p>
+            <p class="text-center m-0">MA</p>
             <h5 class="text-center">18</h5>
             {% endif %}
-            <hr>
-            <a class="corset btn outline-orange w-auto btn-block" href="#" role="button"><i class="far fa-square"></i>   Test</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block" href="#" role="button"><i class="far fa-check-square"></i> Corset</a>
+            <hr class="divider">
+            <a class="btn btn-primary w-auto btn-block" href="/video/1" role="button">Oefening 1</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="btn btn-primary w-auto btn-block" href="/video/2" role="button">Oefening 2</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
         </div>
         <div class="col-sm day">
             {% if day == 1 %}
-            <p class="text-center blue font-weight-bold">DI</p>
+            <p class="text-center blue font-weight-bold m-0">DI</p>
             <h5 class="bg-blue text-white circle-text">19</h5>
             {% else %}
-            <p class="text-center">DI</p>
+            <p class="text-center m-0">DI</p>
             <h5 class="text-center">19</h5>
             {% endif %}
-            <hr>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block" href="#" role="button"><i class="far fa-check-square"></i> Corset</a>
+            <hr class="divider">
+            <a class="btn btn-primary w-auto btn-block" href="/video/3" role="button">Oefening 3</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="btn btn-primary w-auto btn-block" href="/video/4" role="button">Oefening 4</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
         </div>
         <div class="col-sm day">
             {% if day == 2 %}
-            <p class="text-center blue font-weight-bold">WO</p>
+            <p class="text-center blue font-weight-bold m-0">WO</p>
             <h5 class="bg-blue text-white circle-text">20</h5>
             {% else %}
-            <p class="text-center">WO</p>
+            <p class="text-center m-0">WO</p>
             <h5 class="text-center">20</h5>
             {% endif %}
-            <hr>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block" href="#" role="button"><i class="far fa-check-square"></i> Corset</a>
+            <hr class="divider">
+            <a class="btn btn-primary w-auto btn-block" href="/video/5" role="button">Oefening 5</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="btn btn-primary w-auto btn-block" href="/video/6" role="button">Oefening 6</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
         </div>
         <div class="col-sm day">
             {% if day == 3 %}
-            <p class="text-center blue font-weight-bold">DO</p>
+            <p class="text-center blue font-weight-bold m-0">DO</p>
             <h5 class="bg-blue text-white circle-text">21</h5>
             {% else %}
-            <p class="text-center">DO</p>
+            <p class="text-center m-0">DO</p>
             <h5 class="text-center">21</h5>
             {% endif %}
-            <hr>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block" href="#" role="button"><i class="far fa-check-square"></i> Corset</a>
+            <hr class="divider">
+            <a class="btn btn-primary w-auto btn-block" href="/video/1" role="button">Oefening 1</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="btn btn-primary w-auto btn-block" href="/video/2" role="button">Oefening 2</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
         </div>
         <div class="col-sm day">
             {% if day == 4 %}
-            <p class="text-center blue font-weight-bold">VR</p>
+            <p class="text-center blue font-weight-bold m-0">VR</p>
             <h5 class="bg-blue text-white circle-text">22</h5>
             {% else %}
-            <p class="text-center">VR</p>
+            <p class="text-center m-0">VR</p>
             <h5 class="text-center">22</h5>
             {% endif %}
-            <hr>
+            <hr class="divider">
+            <a class="corset btn outline-orange w-auto btn-block" href="#" role="button"><i class="far fa-square"></i> Corset</a>
+            <hr class="divider">
+            <a class="btn btn-primary w-auto btn-block" href="/video/3" role="button">Oefening 3</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="btn btn-primary w-auto btn-block" href="/video/4" role="button">Oefening 4</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
         </div>
         <div class="col-sm day">
             {% if day == 5 %}
-            <p class="text-center blue font-weight-bold">ZA</p>
+            <p class="text-center blue font-weight-bold m-0">ZA</p>
             <h5 class="bg-blue text-white circle-text">23</h5>
             {% else %}
-            <p class="text-center">ZA</p>
+            <p class="text-center m-0">ZA</p>
             <h5 class="text-center">23</h5>
             {% endif %}
-            <hr>
+            <hr class="divider">
+            <a class="corset btn outline-orange w-auto btn-block" href="#" role="button"><i class="far fa-square"></i> Corset</a>
+            <hr class="divider">
+            <a class="btn btn-primary w-auto btn-block" href="/video/5" role="button">Oefening 5</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="btn btn-primary w-auto btn-block" href="/video/6" role="button">Oefening 6</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
         </div>
         <div class="col-sm day">
             {% if day == 6 %}
-            <p class="text-center blue font-weight-bold">ZO</p>
+            <p class="text-center blue font-weight-bold m-0">ZO</p>
             <h5 class="bg-blue text-white circle-text">24</h5>
             {% else %}
-            <p class="text-center">ZO</p>
+            <p class="text-center m-0">ZO</p>
             <h5 class="text-center">24</h5>
             {% endif %}
-            <hr>
+            <hr class="divider">
+            <a class="corset btn outline-orange w-auto btn-block" href="#" role="button"><i class="far fa-square"></i> Corset</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
+            <a class="corset btn success w-auto btn-block invisible" href="#" role="button"> Invisible</a>
+            <hr class="divider">
         </div>
+        <div class="col-sm"></div>
+        <div class="col-sm"></div>
     </div>
     <hr>
 </div>

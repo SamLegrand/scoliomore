@@ -14,8 +14,8 @@
     border-right: 1px solid grey;
 }
 
-.day:first-child {
-    border-left: 1px solid grey;
+.col-sm:nth-child(8) {
+    border: none;
 }
 
 .day h5 {
@@ -118,4 +118,16 @@ video {
     color: white;
     background-color: #17a1b0;
     border-color: #17a1b0;
+}
+
+.time {
+    height: 9px;
+    vertical-align: bottom;
+    line-height: 9px;
+    text-align: right;
+}
+
+.divider {
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
