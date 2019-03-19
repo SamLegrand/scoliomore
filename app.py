@@ -34,12 +34,6 @@ def api_logout():
 def render_home():
     return render_template('index.html', session=session)
 
-@app.route('/login')
-def render_login():
-    if 'username' in session:
-        return redirect('/')
-    return render_template('login.html', session=session)
-
 @app.route('/register')
 def render_register():
     if 'username' in session:
